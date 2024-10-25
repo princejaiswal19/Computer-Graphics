@@ -1,4 +1,4 @@
-#include <graphics.h>
+#include<graphics.h>
 #include <iostream>
 #include <math.h>
 
@@ -76,7 +76,7 @@ void rotateZ3D(Point3D cube[8], float angle) {
 
 int main() {
     int gd = DETECT, gm;
-    initgraph(&gd, &gm, "");
+    initgraph(&gd, &gm, NULL);
 
     Point3D cube[8] = {
         {100, 100, 100}, {200, 100, 100}, {200, 200, 100}, {100, 200, 100},
